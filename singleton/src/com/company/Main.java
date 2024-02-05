@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.mysql.RunPostgreSQlQuery;
+import com.company.mysql.RunSecurePostgresql;
 import com.company.userrepo.Login;
 import com.company.userrepo.User;
 
@@ -32,5 +34,22 @@ public class Main {
         // create class line
         // create class triangle
         // create class square
+
+        RunPostgreSQlQuery post = new RunPostgreSQlQuery();
+        post.run();
+        System.out.println("============================");
+        RunSecurePostgresql runs = new RunSecurePostgresql();
+        runs.run();
+
+        // create template methods
+        // ShapeDrawer with these steps
+        // 1. clear shape
+        // 2. draw border
+        // 3. fill shape with color
+        // 4. refine
+        // implement the sequence with DrawShape2D (just println each step)
+        // create inheritor called DrawShape2DNoFill which does not fill with color (empty method)
+        // implement the sequence with DrawShape3D (just println each step), without border
+        // run the DrawShape2DNoFill
     }
 }
