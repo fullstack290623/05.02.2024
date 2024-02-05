@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.drawShape2D.DrawShape2DNoFill;
 import com.company.mysql.RunPostgreSQlQuery;
 import com.company.mysql.RunSecurePostgresql;
 import com.company.userrepo.Login;
@@ -51,5 +52,8 @@ public class Main {
         // create inheritor called DrawShape2DNoFill which does not fill with color (empty method)
         // implement the sequence with DrawShape3D (just println each step), without border
         // run the DrawShape2DNoFill
+
+        DrawShape2DNoFill drfill = new DrawShape2DNoFill();
+        drfill.run();
     }
 }
