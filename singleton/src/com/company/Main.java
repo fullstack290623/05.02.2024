@@ -1,5 +1,8 @@
 package com.company;
 
+import com.company.userrepo.Login;
+import com.company.userrepo.User;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -20,5 +23,14 @@ public class Main {
         Clock.getInstance().showTime();
         Clock.getInstance().showTime();
         Clock.getInstance().showTime();
+
+        User paul = Login.getInstance().tryLogin("Paul");
+        System.out.println(paul);
+
+        // create package called geometry
+        // create class point
+        // create class line
+        // create class triangle
+        // create class square
     }
 }
